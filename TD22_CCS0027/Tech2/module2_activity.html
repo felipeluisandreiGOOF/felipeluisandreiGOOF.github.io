@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Technical 2
+    </title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Testing</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#posts">Posts</a>
+        </nav>
+        <section>
+            <article>
+                <h2>Testing</h2>
+                <p>Test again</p>
+            </article>
+        </section>
+        <footer>
+            <p>&copy; 2025 Chaos</p>
+        </footer>
+    </main>
+</body>
+</html>
