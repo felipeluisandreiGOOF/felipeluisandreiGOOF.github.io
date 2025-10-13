@@ -1,0 +1,53 @@
+* {
+    font-family: Impact;
+    background-color: rgb(53, 53, 53);
+}
+
+header h1 {
+    line-height: 5px;
+}
+
+caption {
+    text-align: center;
+}
+
+body {
+    background-color: dimgray;
+}
+
+table {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+nav {
+    background-color: dimgray;
+}
+
+article {
+    background-color: dimgray;
+}
+
+footer {
+    background-color: dimgray;
+}
+
+p {
+    background-color: dimgray;
+    font-size: medium;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+h1 {
+    background-color: dimgrey;
+}
+h2 {
+    background-color: dimgrey;
+}
+header {
+    background-color: dimgray;
+}
