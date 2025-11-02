@@ -3,11 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Designs/F4_style.css">
+
     <title>Interactive HTML</title>
 </head>
 
 <body> 
     
+    <h1>Sign up Form</h1>
+
+    <!--text inputs, buttons, and ids-->
+
+    <form id="inputForms">
+        <input type="text" id="idNum" placeholder="ID Number">
+        <input type="text" id="fstName" placeholder="First Name">
+        <input type="text" id="midName" placeholder="Middle Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+
+    <select id="gender">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <input type="date" id="birthday">
+
+    <button type="button" onclick="saveData()">Save</button>
+    </form>
+
+    <h1>Submitted Data</h1>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>ID Number</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Birthday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <!--put input products here-->
+        </tbody>
+    </table>
+
+<!--the function part-->
+
+    <script>
+        function saveData() {
+            const id = document.getElementById("idNum").value;
+            const first = document.getElementById("fstName").value;
+            const middle = document.getElementById("midName").value;
+            const last = document.getElementById("lastName").value;
+            const gender = document.getElementById("gender").value;
+            const birthday = document.getElementById("birthday").value;
+
+            const table = document.getElementById("dataTable").getElementsByTagName("tbody")[0];
+            const newRow = table.insertRow();
+
+            newRow.insertCell(0).innerText = id;
+            newRow.insertCell(1).innerText = first;
+            newRow.insertCell(2).innerText = middle;
+            newRow.insertCell(3).innerText = last;
+            newRow.insertCell(4).innerText = gender;
+            newRow.insertCell(5).innerText = birthday;
+
+            document.getElementById("inputForms").reset();
+        }
+    </script>
 </body>
 
 </html>
