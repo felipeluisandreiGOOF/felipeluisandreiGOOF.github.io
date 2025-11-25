@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artistry Catalog — Gallery</title>
+  <link rel="stylesheet" href="FinalStyle.css">
+  <meta name="description" content="Gallery of artworks in the Artistry Catalog online art catalog." />
+  <script defer src="js_main.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="home.html">Artistry Catalog</a></div>
+    <nav class="main-nav" id="mainNav">
+      <a href="home.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="signup.html">Sign up</a>
+      <a href="login.html">Log in</a>
+    </nav>
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+      <main>
+        <section class="gallery-list">
+          <h1>Gallery</h1>
+          <p class="muted">Browse the full collection.</p>
+
+          <div class="grid">
+
+            <div class="grid-item">
+            <img src="MonkeyThinking.jpg" alt="Image One Description" onclick="openModal(this)">
+            <figcaption><strong>Geometric City</strong> — Sam Lee</figcaption>
+            </div>
+
+            <div class="grid-item">
+            <img src="img2.jpg" alt="Image Two Description" onclick="openModal(this)">
+            <figcaption><strong>Geometric City</strong> — Sam Lee</figcaption>
+            </div>
+
+            <div class="grid-item">
+            <img src="img3.jpg" alt="Image Three Description" onclick="openModal(this)">
+            <figcaption><strong>Geometric City</strong> — Sam Lee</figcaption>
+            </div>
+
+            <div id="popup" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <img id="popupImg">
+            <div class="caption" id="popupText"></div>
+            </div>
+          </div>
+
+
+          <div class="grid">
+
+            <div class="grid-item">
+            <img src="MonkeyThinking.jpg" alt="Image One Description" onclick="openModal(this)">
+            <figcaption><strong>Geometric City</strong> — Sam Lee</figcaption>
+            </div>
+
+            <div class="grid-item">
+            <img src="img2.jpg" alt="Image Two Description" onclick="openModal(this)">
+            <figcaption><strong>Geometric City</strong> — Sam Lee</figcaption>
+            </div>
+
+            <div class="grid-item">
+            <img src="img3.jpg" alt="Image Three Description" onclick="openModal(this)">
+            <figcaption><strong>Geometric City</strong> — Sam Lee</figcaption>
+            </div>
+
+            <div id="popup" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <img id="popupImg">
+            <div class="caption" id="popupText"></div>
+            </div>
+          </div>
+          
+        </section>
+      </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Artistry Catalog</p>
+  </footer>
+</body>
+</html>
