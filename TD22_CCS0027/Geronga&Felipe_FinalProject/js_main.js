@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  // Dynamic greeting and time
   const greetEl = document.getElementById('greeting');
   if(greetEl){
     const now = new Date();
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function(){
     greetEl.textContent = g + ' Today is ' + now.toLocaleDateString() + ', ' + now.toLocaleTimeString();
   }
 
-  // Signup validation
   const signup = document.getElementById('signupForm');
   if(signup){
     signup.addEventListener('submit', function(e){
@@ -50,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  // Contact form
   const contact = document.getElementById('contact');
   if(contact){
     contact.addEventListener('submit', function(e){
@@ -60,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  // Login
   const login = document.getElementById('loginForm');
   if(login){
     login.addEventListener('submit', function(e){
